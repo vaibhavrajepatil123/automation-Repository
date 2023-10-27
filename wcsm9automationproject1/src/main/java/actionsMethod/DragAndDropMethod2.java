@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class DragAndDropMethod2 {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
           WebDriver driver=new ChromeDriver();
           driver.manage().window().maximize();
@@ -27,6 +27,16 @@ public class DragAndDropMethod2 {
           WebElement tar3 = driver.findElement(By.xpath("(//li[@class='placeholder'])[3]"));
           WebElement tar4 = driver.findElement(By.xpath("(//li[@class='placeholder'])[4]"));
           
+	        Actions act = new Actions(driver);
+	        act.dragAndDrop(src1, tar1).perform();
+	        Thread.sleep(2000);
+	        act.dragAndDrop(src2, tar2).perform();
+	        Thread.sleep(2000);
+	        act.dragAndDrop(src3, tar3).perform();
+	        Thread.sleep(2000);
+	        act.dragAndDrop(src4, tar4).perform();
+	        Thread.sleep(2000);
+	        
 	        
           
 	}
