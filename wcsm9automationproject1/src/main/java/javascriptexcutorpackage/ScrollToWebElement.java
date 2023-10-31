@@ -1,4 +1,4 @@
-package javascriptexcutor;
+package javascriptexcutorpackage;
 
 import java.io.File;
 import java.io.IOException;
