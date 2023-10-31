@@ -16,7 +16,7 @@ public class ScreenShotOfWebElement3 {
            
            driver.get("https://www.bluestone.com");
            driver.findElement(By.id("confirmBtn")).click();
-           driver.findElement(By.xpath("//a[text()='Watch Jewellery ']"))
+           driver.findElement(By.xpath("//a[text()='Watch Jewellery ']"));
 
 	
 	}
