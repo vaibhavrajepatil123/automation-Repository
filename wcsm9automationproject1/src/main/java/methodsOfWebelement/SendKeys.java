@@ -13,19 +13,20 @@ public class SendKeys {
 	   public static void main(String[] args) throws InterruptedException
 	{
 	   
-		  WebDriver driver=new ChromeDriver();
-		  driver.manage().window().maximize();
-		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		  driver.get("http://desktop-toca723/login.do");
-		  
+		   WebDriver driver=new ChromeDriver();
+		   driver.manage().window().maximize();
+		   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		   
+		   driver.get("http://desktop-toca723/login.do");
+		   Thread.sleep(2000);
 		   WebElement usntb = driver.findElement(By.name("username"));
 		   usntb.sendKeys("admin");
 		   Thread.sleep(2000);
+		   WebElement pwt = driver.findElement(By.name("pwd"));
+		   pwt.sendKeys("manager");
+		   Thread.sleep(2000);
 		   
-		    WebElement pswtb = driver.findElement(By.name("pwd"));
-		    pswtb.sendKeys("manager");
-		    Thread.sleep(2000);
-		   
+		 
 		   
 		   
 	}
