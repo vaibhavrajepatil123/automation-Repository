@@ -3,6 +3,7 @@ package dataDrivenFramework;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -43,4 +44,13 @@ public class Flib {
     	int rc = sheet.getLastRowNum();                      // get the no of rows present in the sheet
     	return rc; 
      }
+    
+     public String readDataFromProperty(String propPath,String key) throws IOException
+ 	{
+ 		FileInputStream fis = new FileInputStream(propPath);
+ 		Properties prop = new Properties();
+ 		prop.load(fis);
+ 		String data = prop.getProperty(key);
+ 		return data;
+ 	}
 }
