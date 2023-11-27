@@ -1,4 +1,4 @@
-package keywordDrivenFramework;
+package keyWordDrivenFramework2;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -13,45 +13,43 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Flib {
-   // it is used to store generic reusable methods and all the generic reusable methods are non static
-	
-	public String readDataFromExcel(String excelPath, String sheetName, int rowCount,int cellCount) throws EncryptedDocumentException, IOException
+       
+	//read the data from excel file
+	public String readExcelData(String excelPath, String sheetName, int rowNumber,int cellNumber) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis = new FileInputStream(excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sheet = wb.getSheet(sheetName);
-		Row row = sheet.getRow(rowCount);
-		Cell cell = row.getCell(cellCount);
-//	          String data = cell.getStringCellValue();
-//		return data;
-     
-		String  data=null;
-		
-		if(cell.getCellType()==cell.getCellType().STRING)
-		{
+		 Row row = sheet.getRow(rowNumber);
+		 Cell cell = row.getCell(cellNumber);
+		 
+		 String data=null;
+		 if (cell.getCellType()==cell.getCellType().STRING)
+	    {
 			data=cell.getStringCellValue();
 		}
-		else if(cell.getCellType()==cell.getCellType().NUMERIC)
+		 else if (cell.getCellType()==cell.getCellType().NUMERIC)
 		{
-			data=cell.getStringCellValue().valueOf(cell.getNumericCellValue());
+             data=cell.getStringCellValue().valueOf(cell.getNumericCellValue());
 		}
-		return data;
+		 return data;
 	}
 	
-	public void writeDataToExcel(String excelPath, String sheetName,int rowCount,int cellCount,String data) throws EncryptedDocumentException, IOException
+	// write the data from excel
+	public void writeDataFromExcel(String excelPath, String sheetName,int rowNumber, int cellNumber,String data) throws EncryptedDocumentException, IOException
 	{
-		
 		FileInputStream fis = new FileInputStream(excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sheet = wb.getSheet(sheetName);
-		Row row = sheet.createRow(rowCount);
-		Cell cell = row.createCell(cellCount);
+		Row row = sheet.createRow(rowNumber);
+		Cell cell = row.createCell(cellNumber);
 		cell.setCellValue(data);
 		
 		FileOutputStream fos = new FileOutputStream(excelPath);
 		wb.write(fos);
 	}
 	
+	// to find the row count in excel file
 	public int rowCount(String excelPath,String sheetName) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis = new FileInputStream(excelPath);
@@ -61,12 +59,18 @@ public class Flib {
 		return rc;
 	}
 	
-	public String readDataFromProperty(String propPath,String key) throws IOException
+	//to read the data from property file
+	public String readDataFromProperty(String propertyPath, String key) throws IOException
 	{
-		FileInputStream fis = new FileInputStream(propPath);
+		FileInputStream fis = new FileInputStream(propertyPath);
 		Properties prop = new Properties();
 		prop.load(fis);
-		String data = prop.getProperty(key);
-		return data;
+		 String data = prop.getProperty(key);
+		 return data;
 	}
+	
+	
+	
+	
+	
 }

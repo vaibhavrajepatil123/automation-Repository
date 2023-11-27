@@ -6,18 +6,18 @@ import org.openqa.selenium.By;
 
 public class ActiTimeValidLogin extends BaseTest {
   
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 	
 		// launch the browser
 		BaseTest bt = new BaseTest();
-		bt.openBrowser();
+		
 		// to read the data from property file
 		Flib flib = new Flib();
-		
-		driver.findElement(By.name("username")).sendKeys(flib.readDataFromProperty("./src/main/resources/config.properties", "Username"));
-		driver.findElement(By.name("pwd")).sendKeys(flib.readDataFromProperty("./src/main/resources/config.properties", "Password"));
+		bt.openBrowser();
+		driver.findElement(By.name("username")).sendKeys(flib.readDataFromProperty(PROP_PATH, "Username"));
+		driver.findElement(By.name("pwd")).sendKeys(flib.readDataFromProperty(PROP_PATH, "Password"));
 		driver.findElement(By.id("loginButton")).click();
-		
+		Thread.sleep(2000);
 		bt.closeBrowser();
 	}
 }
