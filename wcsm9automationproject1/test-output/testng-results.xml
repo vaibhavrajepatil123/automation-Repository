@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[method1 from demo class]]>
-    </line>
-    <line>
-      <![CDATA[method2 from demo class]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-11-27T12:53:53 IST" name="Default suite" finished-at="2023-11-27T12:53:54 IST" duration-ms="84">
+  <suite started-at="2023-11-29T12:55:26 IST" name="Suite" finished-at="2023-11-29T12:55:41 IST" duration-ms="14828">
     <groups>
     </groups>
-    <test started-at="2023-11-27T12:53:53 IST" name="Default test" finished-at="2023-11-27T12:53:54 IST" duration-ms="84">
-      <class name="testNGpackage.Demo">
-        <test-method signature="method1()[pri:0, instance:testNGpackage.Demo@66f57048]" started-at="2023-11-27T12:53:54 IST" name="method1" finished-at="2023-11-27T12:53:54 IST" duration-ms="14" status="PASS">
+    <test started-at="2023-11-29T12:55:26 IST" name="Test" finished-at="2023-11-29T12:55:41 IST" duration-ms="14828">
+      <class name="testNGExecutionpackage.SelectTest">
+        <test-method signature="selectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecutionpackage.SelectTest@71a8adcf]" started-at="2023-11-29T12:55:26 IST" name="selectTestMethod" finished-at="2023-11-29T12:55:41 IST" duration-ms="14753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://desktop-toca723/login.do]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[method1 from demo class]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- method1 -->
-        <test-method signature="method2()[pri:0, instance:testNGpackage.Demo@66f57048]" started-at="2023-11-27T12:53:54 IST" name="method2" finished-at="2023-11-27T12:53:54 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[method2 from demo class]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- method2 -->
-      </class> <!-- testNGpackage.Demo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- selectTestMethod -->
+      </class> <!-- testNGExecutionpackage.SelectTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

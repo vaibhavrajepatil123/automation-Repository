@@ -9,13 +9,14 @@ public class Demo {
  
  // System.out.println("method1 from demo class");
 	  Reporter.log("method1 from demo class",true);
+	  
   }
   
   @Test
   public void method2()
   {
 	// System.out.println("method2 from demo class"); 
-	  Reporter.log("method2 from demo class",false);
+	  Reporter.log("method2 from demo class",true);
   }
   
 }
