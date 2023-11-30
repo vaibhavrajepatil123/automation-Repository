@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-29T12:55:26 IST" name="Suite" finished-at="2023-11-29T12:55:41 IST" duration-ms="14828">
+  <suite started-at="2023-11-30T12:48:50 IST" name="Suite" finished-at="2023-11-30T12:49:19 IST" duration-ms="29405">
     <groups>
     </groups>
-    <test started-at="2023-11-29T12:55:26 IST" name="Test" finished-at="2023-11-29T12:55:41 IST" duration-ms="14828">
+    <test started-at="2023-11-30T12:48:50 IST" name="ChromeTest" finished-at="2023-11-30T12:49:04 IST" duration-ms="14204">
       <class name="testNGExecutionpackage.SelectTest">
-        <test-method signature="selectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecutionpackage.SelectTest@71a8adcf]" started-at="2023-11-29T12:55:26 IST" name="selectTestMethod" finished-at="2023-11-29T12:55:41 IST" duration-ms="14753" status="PASS">
+        <test-method signature="selectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecutionpackage.SelectTest@71a8adcf]" started-at="2023-11-30T12:48:50 IST" name="selectTestMethod" finished-at="2023-11-30T12:49:04 IST" duration-ms="14142" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
@@ -34,6 +34,36 @@
           </reporter-output>
         </test-method> <!-- selectTestMethod -->
       </class> <!-- testNGExecutionpackage.SelectTest -->
-    </test> <!-- Test -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2023-11-30T12:49:04 IST" name="FirefoxTest" finished-at="2023-11-30T12:49:19 IST" duration-ms="15137">
+      <class name="testNGExecutionpackage.SelectTest">
+        <test-method signature="selectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecutionpackage.SelectTest@740cae06]" started-at="2023-11-30T12:49:04 IST" name="selectTestMethod" finished-at="2023-11-30T12:49:19 IST" duration-ms="15132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://desktop-toca723/login.do]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTestMethod -->
+      </class> <!-- testNGExecutionpackage.SelectTest -->
+    </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>
