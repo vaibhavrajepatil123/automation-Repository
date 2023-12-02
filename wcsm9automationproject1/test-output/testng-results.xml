@@ -1,69 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[k]]>
+    </line>
+    <line>
+      <![CDATA[s]]>
+    </line>
+    <line>
+      <![CDATA[a]]>
+    </line>
+    <line>
+      <![CDATA[f]]>
+    </line>
+    <line>
+      <![CDATA[p]]>
+    </line>
+    <line>
+      <![CDATA[h]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-11-30T12:48:50 IST" name="Suite" finished-at="2023-11-30T12:49:19 IST" duration-ms="29405">
+  <suite started-at="2023-12-02T12:47:53 IST" name="Default suite" finished-at="2023-12-02T12:47:53 IST" duration-ms="104">
     <groups>
     </groups>
-    <test started-at="2023-11-30T12:48:50 IST" name="ChromeTest" finished-at="2023-11-30T12:49:04 IST" duration-ms="14204">
-      <class name="testNGExecutionpackage.SelectTest">
-        <test-method signature="selectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecutionpackage.SelectTest@71a8adcf]" started-at="2023-11-30T12:48:50 IST" name="selectTestMethod" finished-at="2023-11-30T12:49:04 IST" duration-ms="14142" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://desktop-toca723/login.do]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-12-02T12:47:53 IST" name="Default test" finished-at="2023-12-02T12:47:53 IST" duration-ms="104">
+      <class name="testNGAnnotations_Flags.Flag4">
+        <test-method signature="k()[pri:0, instance:testNGAnnotations_Flags.Flag4@7bab3f1a]" started-at="2023-12-02T12:47:53 IST" name="k" finished-at="2023-12-02T12:47:53 IST" duration-ms="13" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[k]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- selectTestMethod -->
-      </class> <!-- testNGExecutionpackage.SelectTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2023-11-30T12:49:04 IST" name="FirefoxTest" finished-at="2023-11-30T12:49:19 IST" duration-ms="15137">
-      <class name="testNGExecutionpackage.SelectTest">
-        <test-method signature="selectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExecutionpackage.SelectTest@740cae06]" started-at="2023-11-30T12:49:04 IST" name="selectTestMethod" finished-at="2023-11-30T12:49:19 IST" duration-ms="15132" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://desktop-toca723/login.do]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- k -->
+        <test-method signature="s()[pri:0, instance:testNGAnnotations_Flags.Flag4@7bab3f1a]" started-at="2023-12-02T12:47:53 IST" name="s" finished-at="2023-12-02T12:47:53 IST" duration-ms="4" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[s]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- selectTestMethod -->
-      </class> <!-- testNGExecutionpackage.SelectTest -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- s -->
+        <test-method signature="a()[pri:1, instance:testNGAnnotations_Flags.Flag4@7bab3f1a]" started-at="2023-12-02T12:47:53 IST" name="a" finished-at="2023-12-02T12:47:53 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[a]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- a -->
+        <test-method signature="f()[pri:3, instance:testNGAnnotations_Flags.Flag4@7bab3f1a]" started-at="2023-12-02T12:47:53 IST" name="f" finished-at="2023-12-02T12:47:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[f]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="p()[pri:3, instance:testNGAnnotations_Flags.Flag4@7bab3f1a]" started-at="2023-12-02T12:47:53 IST" name="p" finished-at="2023-12-02T12:47:53 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[p]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- p -->
+        <test-method signature="h()[pri:4, instance:testNGAnnotations_Flags.Flag4@7bab3f1a]" started-at="2023-12-02T12:47:53 IST" name="h" finished-at="2023-12-02T12:47:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[h]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- h -->
+      </class> <!-- testNGAnnotations_Flags.Flag4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
